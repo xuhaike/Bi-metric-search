@@ -8,25 +8,33 @@ We propose a new "bi-metric" framework for designing nearest neighbor data struc
 
 ## Reproducing our main results
 
-Step 1, you need to generate our environment from "requirement.txt"
+### Step 1: create environment
+
+You need to generate our environment from "requirement.txt"
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Step 2, run "download.sh" to download the data sets you want to test. Currently, we have included all the 15 MTEB retrieval benchmark data sets in the script.
+### Step 2: download data sets
+
+Run "download.sh" to download the data sets you want to test. Currently, we have included all the 15 MTEB retrieval benchmark data sets in the script.
 
 ```bash
 ./download.sh
 ```
 
-Step 3, run "preprocessing_embeddings.py" to produce all the embeddings for the bi-encoders you want to test (both the expensive model and the model as a distance proxy). Currently, we have included all the 15 MTEB retrieval benchmark data sets and all the 4 bi-encoders in the python code as mentioned in our paper. Note that it takes a bit long to generate embeddings for the "mistral" model. Feel free to adjust the data sets and model names used in the python code.
+### Step 3: prepare sentence embeddings
+
+Run "preprocessing_embeddings.py" to produce all the embeddings for the bi-encoders you want to test (both the expensive model and the model as a distance proxy). Currently, we have included all the 15 MTEB retrieval benchmark data sets and all the 4 bi-encoders in the python code as mentioned in our paper. Note that it takes a bit long to generate embeddings for the "mistral" model. Feel free to adjust the data sets and model names used in the python code.
 
 ```bash
 ./preprocessing_embeddings.py
 ```
 
-Step 4, run "test.sh" to test different methods on each data set. Currently, we choose "bge-micro" to be the distance proxy model and "mistral" to be the expensive model and we have included all the 15 data sets in the script.
+### Step 4: test
+
+Run "test.sh" to test different methods on each data set. Currently, we choose "bge-micro" to be the distance proxy model and "mistral" to be the expensive model and we have included all the 15 data sets in the script.
 
 ```bash
 ./test.sh
@@ -39,3 +47,5 @@ Step 4, run "test.sh" to test different methods on each data set. Currently, we 
 Note that you need to first run "single-metric" to generate groundtruth nearest neighbors for the purpose of testing recall rate as in the current script.
 
 After that, you should be able to find the csv results in "results" folder. The default script generates the results in Figure 1 of our paper.
+
+## Citation

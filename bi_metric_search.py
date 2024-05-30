@@ -246,7 +246,7 @@ groundtruth={}
 for qid, res in qrels.items():
     groundtruth[qid]=[]
     for pid, value in res.items():
-        if value!=0:
+        if value!=0 and pid in passage_name_id:
             groundtruth[qid].append((value,passage_name_id[pid]))
     groundtruth[qid]=[x[1] for x in sorted(groundtruth[qid],reverse=True)]
 

@@ -10,7 +10,7 @@ We propose a new "bi-metric" framework for designing nearest neighbor data struc
 
 ### Step 1: create the environment
 
-You need to generate our environment from `requirement.txt`
+You need to generate our environment from `requirements.txt`
 
 ```bash
 pip install -r requirements.txt
@@ -46,6 +46,6 @@ Run `test.sh` to test different methods on each dataset. Currently, we have chos
 
 Note that you need to first run `single-metric` to generate the groundtruth nearest neighbors for evaluating the recall rate, as in the current script.
 
-After that, you should be able to find the CSV results in `results` folder. The default script generates the results shown in Figure 1 of our paper.
+After that, you should be able to find the CSV results in the `results` folder. The default script generates the results shown in Figure 1 of our paper.
 
 ## Citation

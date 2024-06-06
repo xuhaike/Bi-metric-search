@@ -52,6 +52,7 @@ After that, you should be able to find the CSV results in the `results` folder. 
 
 Please cite the paper as 
 
+```
 @misc{xu2024bimetric,
       title={A Bi-metric Framework for Fast Similarity Search}, 
       author={Haike Xu and Sandeep Silwal and Piotr Indyk},
@@ -60,5 +61,6 @@ Please cite the paper as
       archivePrefix={arXiv},
       primaryClass={cs.IR}
 }
+```
 
 And feel free to contact the authors at: {haikexu, silwal, indyk}@mit.edu

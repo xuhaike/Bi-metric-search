@@ -1,6 +1,6 @@
 # A Bi-metric Framework for Fast Similarity Search
 
-This repository contains to code for our paper xxx.
+This repository contains to code for our paper "A Bi-metric Framework for Fast Similarity Search" (https://arxiv.org/abs/2406.02891).
 
 ## Overview
 
@@ -48,4 +48,17 @@ Note that you need to first run `single-metric` to generate the groundtruth near
 
 After that, you should be able to find the CSV results in the `results` folder. The default script generates the results shown in Figure 1 of our paper.
 
-## Citation
+## Citation and contact
+
+Please cite the paper as 
+
+@misc{xu2024bimetric,
+      title={A Bi-metric Framework for Fast Similarity Search}, 
+      author={Haike Xu and Sandeep Silwal and Piotr Indyk},
+      year={2024},
+      eprint={2406.02891},
+      archivePrefix={arXiv},
+      primaryClass={cs.IR}
+}
+
+And feel free to contact the authors at: {haikexu, silwal, indyk}@mit.edu
